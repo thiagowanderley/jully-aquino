@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-header:'Poppins', sans-serif;
+    --font-main: 'Cinzel', serif;
+    --cor01: #E6A43B;
+    --cor02: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+/*------------------------------------------------------------------*/
+
+.paragrafo {
+    visibility: hidden;
+}
+
+
+/*------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+header {
+    height: 20vh;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+}
+
+header > .titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header > .titulo > h1 {
+    font-family: var(--font-header);
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--cor01);
+}
+
+header > .titulo > p {
+    font-family: var(--font-header);
+    color: var(--cor01);
+    font-size: 0.5em;
+    text-align: center;
+    width: 80px;
+    transform: translate(108px, -12px);
+}
+/*------------------------------------------------------------------*/
+nav {
+    height: 30px;
+    background-color: var(--cor02);
+    border-bottom: 2px solid var(--cor01);
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    height: 100%;
+}
+
+nav > ul > a > li {
+    width: 25vw;
+    text-align: center;
+    font-family: var(--font-main);
+    height: 100%;
+    color: var(--cor01);
+}
+
+nav > ul > a {
+    text-decoration: none;
+}
+
+nav > ul > a > li:hover {
+    background-color:#e7be7b;
+    color: var(--cor02);
+    transition: 0.3s;
+    border-bottom: 2px solid black;
+}
+
+/*------------------------------------------------------------------*/
+
+
+main > .section1 {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+}
+
+main > .section1 > .foto {
+    width: 55%;
+    height: 100%;
+    background: url(imagens/verde.JPG) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+main > .section1 > .texto {
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+
+main > .section1 > .texto > .caixa-texto {
+    background-color: #000000;
+    width: 300px;
+    height: 260px;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    right: 50%;
+}
+
+main > .section1 > .texto > .caixa-texto > h1 {
+    font-family: var(--font-main);
+    font-size: 2em;
+    color: white;
+}
+
+main > .section1 > .texto > .caixa-texto > p {
+    font-family: var(--font-header);
+    color: white;
+    font-size: 1.3em;
+}
+
+/*----------------------*/
+
+main > .section2 {
+    width: 100vw;
+    height: 600px;
+    background: url(imagens/vermelho.JPG) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main > .section2 > p {
+    font-family: var(--font-header);
+    font-size: 3.5em;
+    font-weight: bold;
+    color: white;
+    width: 500px;
+    transform: translate(55px, 180px);
+}
+
+/*----------------------*/
+
+main > .section3 {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    background: black;
+}
+
+main > .section3 > div {
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+}
+
+main > .section3 > div > img {
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50% 0;
+}
+
+.section3 p {
+    width: 105px;
+    margin: auto;
+    position: relative;
+    top: 480px;
+    color: white;
+    font-size:.8em;
+    font-weight: 300;
+    font-family: var(--font-header);
+}
+
+.section3 h3 {
+    width: 105px;
+    margin: auto;
+    position: relative;
+    top: 480px;
+    color: var(--cor01);
+    font-size:1.2em;
+    font-weight: 400;
+    font-family: var(--font-main);
+}
+
+.section3 a {
+    text-decoration: none;
+}
+
+.section3 a p:hover {
+    transform: translateY(-2px);
+    border-bottom: 2px solid var(--cor01);
+    transition: 0.4s;
+}
+
+/*----------------------*/
+
+main > .section4 {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    background: url(imagens/bk-section4.JPG) no-repeat;
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+main > .section4 > .caixa-texto {
+    background-color: #ffffff;
+    width: 300px;
+    height: 220px;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    right: 70%;
+}
+
+main p {
+    font-family: var(--font-header);
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+}
+
+main h1 {
+    font-family: var(--font-main);
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
